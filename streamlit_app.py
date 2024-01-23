@@ -8,4 +8,4 @@ pals = list(df.keys())
 pal = st.multiselect("Check Pal options", pals)
 pal_df = df[df[df.keys()] == pal].dropna(how="all").dropna(how="all", axis=1)
 
-display(pal_df)
+pal_df
