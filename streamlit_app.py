@@ -19,4 +19,4 @@ for i in pal_dict:
 res = list({*map(tuple, map(sorted, pal_tuples))})
 df = pd.DataFrame(res, columns=["Parent 1", "Parent 2"])
 
-st.dataframe(df)
+st.dataframe(df, width=30)
