@@ -14,7 +14,7 @@ pal_dict = df1.to_dict()
 pal_tuples = []
 for i in pal_dict:
     for j in pal_dict[i]:
-        if pal_dict[i][j] == "Suzaku":
+        if pal_dict[i][j] == pal:
             pal_tuples.append((i, j))
 res = list({*map(tuple, map(sorted, pal_tuples))})
 df = pd.DataFrame(res, columns=["Parent 1", "Parent 2"])
